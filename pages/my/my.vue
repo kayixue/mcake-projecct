@@ -1,12 +1,20 @@
 <template>
 	<view>
 		<view class="cont">
-			<view class="margin bg-fff">
-				<view class="flex grid">
-					<view v-for="(item,index) in gridArr" class="flex flex-direction align-center padding">
-						<text :class="['iconfont margin-bottom-xs',item.icon]"></text>
-						{{item.name}}
-					</view>
+		</view>
+		<view class="margin bg-fff">
+			<view class="text-center">
+				<image class="avatar" src="../../static/logo.png" mode=""></image>
+			</view>
+			<view class="text-center">张三风</view>
+			<view class="flex grid">
+				<view v-for="(item,index) in gridArr" class="flex flex-direction align-center padding">
+					<text :class="['iconfont margin-bottom-xs',item.icon]"></text>
+					{{item.name}}
+				</view>
+				<view v-for="(item,index) in gridArr" class="flex flex-direction align-center padding">
+					<text :class="['iconfont margin-bottom-xs',item.icon]"></text>
+					{{item.name}}
 				</view>
 			</view>
 		</view>
@@ -41,12 +49,23 @@
 </script>
 
 <style lang="scss">
-	page {
+	.cont {
 		background-color: #f6f6f6;
+		height: 350upx;
 	}
 
-	.grid .iconfont{
+.grid .iconfont {
 		font-size: 60upx;
 		color: #888;
 	}
+
+	.avatar {
+		width: 150upx;
+		height: 150upx;
+		border-radius: 50%;
+		margin-top: -75upx;
+	}
+.margin.bg-fff{
+	margin-top:-200upx;
+}
 </style>

@@ -1,20 +1,19 @@
 <template>
 	<view>
-		
+		xiaochi
+		<u-rate :count="count" v-model="value"></u-rate>
 	</view>
 </template>
 
 <script>
 	export default {
-		data() {
-			return {
-				
+			data() {
+				return {
+					count: 4,
+					value: 2
+				}
 			}
-		},
-		methods: {
-			
 		}
-	}
 </script>
 
 <style>

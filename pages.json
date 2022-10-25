@@ -1,4 +1,8 @@
-{
+
+	{
+		"easycom": {
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+		},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/index/index",
@@ -50,7 +54,7 @@
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#1e6016",
-		"backgroundColor": "#F8F8F8"
+		"backgroundColor": "#f8f8f8"
 	},
 	"tabBar": {
 		"color": "#d8d8d8",
