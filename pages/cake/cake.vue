@@ -1,9 +1,9 @@
 <template>
 	<view>
 		<view class="cont">
-			<view class="cake-item" v-for="(item,index) in 8">
+			<view class="cake-item" v-for="(item,index) in 8" @click="handleDetail(index)">
 				<view class="poster">
-			
+
 				</view>
 				<view class="info-cont">
 					<view class="info">
@@ -19,7 +19,7 @@
 						</view>
 					</view>
 					<view class="cart-btn">
-			
+
 					</view>
 				</view>
 			</view>
@@ -32,22 +32,28 @@
 		data() {
 			return {
 
-			}
+			} 
 		},
 		methods: {
-
+		handleDetail(idx){
+			console.log(idx);
+			uni.navigateTo({
+				url:'/pages/detail/detail?idx='+idx
+			})
 		}
 	}
+}
 </script>
 
 <style lang="scss">
-	.cont{
+	.cont {
 		display: flex;
 		flex-wrap: wrap;
 		padding: 15upx;
 		justify-content: space-between;
-		
+
 	}
+
 	.cake-item {
 		width: 350upx;
 
@@ -55,13 +61,16 @@
 			height: 350upx;
 			background-color: #f5f5f5;
 		}
-		.fs-28{
+
+		.fs-28 {
 			margin-top: 24upx;
 		}
-		.fs-16{
+
+		.fs-16 {
 			margin: 14upx 0;
 		}
-		.fs-18{
+
+		.fs-18 {
 			margin-bottom: 22upx;
 		}
 	}
