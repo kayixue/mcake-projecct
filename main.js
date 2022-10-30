@@ -8,9 +8,9 @@ Vue.use(uView);
 
 //挂件全局组件
 import MyComp from'components/text-my-comp.vue'
-
-
 Vue.component('test-my-comp',MyComp)
+import NavCustom from 'components/nav-custom.vue'
+Vue.component('nav-custom',NavCustom)
 Vue.config.productionTip = false
 App.mpType = 'app'
 const app = new Vue({
