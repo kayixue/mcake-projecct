@@ -5,6 +5,12 @@ import Vue from 'vue'
 //引入组件库
 import uView from "uview-ui";
 Vue.use(uView);
+
+//挂件全局组件
+import MyComp from'components/text-my-comp.vue'
+
+
+Vue.component('test-my-comp',MyComp)
 Vue.config.productionTip = false
 App.mpType = 'app'
 const app = new Vue({

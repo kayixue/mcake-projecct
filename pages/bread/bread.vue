@@ -5,8 +5,9 @@
 				草莓蛋糕
 			</view>
 			<view class=""> 
-			购物车按钮
+			购物车按钮{{Num}}
 			</view>
+			<test-my-comp name="张" @onNum="Num++"></test-my-comp>
 		</view>
 	</view>
 </template>
@@ -15,7 +16,7 @@
 	export default {
 		data() {
 			return {
-				
+				Num:100
 			}
 		},
 		methods: {
