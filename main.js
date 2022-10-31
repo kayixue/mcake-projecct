@@ -11,6 +11,8 @@ import MyComp from'components/text-my-comp.vue'
 Vue.component('test-my-comp',MyComp)
 import NavCustom from 'components/nav-custom.vue'
 Vue.component('nav-custom',NavCustom)
+import HomeTitle from'components/home-title.vue'
+Vue.component('home-title',HomeTitle)
 Vue.config.productionTip = false
 App.mpType = 'app'
 const app = new Vue({
