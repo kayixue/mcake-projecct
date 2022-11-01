@@ -3,6 +3,7 @@
 		xiaochi
 		<u-rate :count="count" v-model="value"></u-rate>
 		<my-comp></my-comp>
+		
 	</view>
 </template>
 

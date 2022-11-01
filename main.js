@@ -13,6 +13,8 @@ import NavCustom from 'components/nav-custom.vue'
 Vue.component('nav-custom',NavCustom)
 import HomeTitle from'components/home-title.vue'
 Vue.component('home-title',HomeTitle)
+import Gooditem from'components/good-item.vue'
+Vue.component('good-item',Gooditem)
 Vue.config.productionTip = false
 App.mpType = 'app'
 const app = new Vue({

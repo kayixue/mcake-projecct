@@ -1,13 +1,15 @@
 <template>
 	<view>
-		<view class="padding flex justify-between">
-			<text class="iconfont"></text>
-			<view class="fs-28">
-				本季推荐
-			<view>Seasonal Recommend</view>
+		<view class="padding flex justify-between align-center margin-tb-sm">
+			<view class="flex align-center">
+				<text class="iconfont icon-canju "></text>
+				<view class="fs-28 margin-left" >
+					{{title}}
+					<view class="fs-16">{{enTitle}}</view>
+				</view>
 			</view>
-			<view class="fs-14">
-				Seasonal
+			<view class="">
+				{{enTit}}
 			</view>
 		</view>
 	</view>
@@ -15,15 +17,18 @@
 
 <script>
 	export default {
-		name:"home-title",
+		name: "home-title",
+		props:['title','enTitle','enTit'],
 		data() {
 			return {
-				
+
 			};
 		}
 	}
 </script>
 
 <style lang="scss">
-
+.icon-canju{
+	font-size: 60upx;
+}
 </style>
