@@ -28,6 +28,9 @@
 		<view class="flex flex-wrap padding-xs justify-between">
 			<good-item v-for="(item,index) in 4" ></good-item>
 		</view>
+		<view class="back-top">
+			<text class="iconfont icon-tubiao_fanhuidingbu"></text>
+		</view>
 	</view>
 
 </template>
@@ -66,6 +69,18 @@
 .classify{
 	height: 380upx;
 	width: 100%;
+}
+.back-top{
+	height: 100upx;
+	width: 100upx;
+	background-color: #fff;
+	border-radius: 50%;
+	box-shadow: 0 0 10upx 4upx rgba(0,0,0,0.4);
+	position: fixed;
+	bottom: 40upx;
+	right: 20upx;
+	text-align: center;
+	line-height: 100upx;
 }
 
 
